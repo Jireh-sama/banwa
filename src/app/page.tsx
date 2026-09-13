@@ -11,10 +11,12 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FaqSection from "@/components/FaqSection";
 import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
+import GsapScrollOrchestrator from "@/components/GsapScrollOrchestrator";
 
 export default function Home() {
   return (
     <>
+      <GsapScrollOrchestrator />
       <Header />
       <main className="w-full pt-20 bg-surface min-h-screen">
         <div className="flex flex-col w-full">

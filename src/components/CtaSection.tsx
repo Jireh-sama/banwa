@@ -1,6 +1,6 @@
 export default function CtaSection() {
   return (
-    <section className="w-full bg-surface py-20 lg:py-28 relative overflow-hidden">
+    <section id="cta" className="w-full bg-surface py-20 lg:py-28 relative overflow-hidden">
       {/* Ambient background */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[40rem] h-[40rem] rounded-full bg-secondary-fixed/15 blur-3xl pointer-events-none" />
 
