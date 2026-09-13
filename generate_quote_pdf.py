@@ -34,7 +34,7 @@ class NumberedCanvas(canvas.Canvas):
             self.setStrokeColor(colors.HexColor("#E5DDD6"))
             self.setLineWidth(0.5)
             self.line(40, letter[1] - 35, letter[0] - 40, letter[1] - 35)
-            self.drawString(40, letter[1] - 30, "BANWA — Landing Page Project Quote (Ref: BNW-2026-001)")
+            self.drawString(40, letter[1] - 30, "BANWA — Landing Page Project Quote (Ref: BNW-2026-010)")
             self.drawRightString(letter[0] - 40, letter[1] - 30, "Confidential Proposal")
 
         # Bottom footer on all pages
@@ -95,7 +95,7 @@ def create_quote_pdf(filename="Banwa_Project_Quote.pdf"):
     quote_meta_cell = [
         Paragraph("<b>PROJECT QUOTE</b>", style_quote_title),
         Spacer(1, 4),
-        Paragraph("<b>Quote Ref:</b> BNW-2026-001<br/><b>Date:</b> September 14, 2026<br/><b>Validity:</b> 30 Days (Until Oct 14, 2026)", style_quote_meta)
+        Paragraph("<b>Quote Ref:</b> BNW-2026-010<br/><b>Date:</b> September 14, 2026<br/><b>Validity:</b> 30 Days (Until Oct 14, 2026)", style_quote_meta)
     ]
 
     header_table = Table([[brand_header_cell, quote_meta_cell]], colWidths=[280, 252])
