@@ -43,10 +43,11 @@ export default function SimulatorSection() {
     <section
       className="w-full bg-surface-container-low py-20 lg:py-28"
       id="simulator"
+      data-animate="section"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-14">
+        <div className="text-center max-w-2xl mx-auto mb-14" data-animate="header">
           <h2 className="font-heading text-[30px] lg:text-[40px] font-normal leading-[40px] lg:leading-[52px] tracking-[-0.01em] text-on-surface">
             Preview Your Remembrance
           </h2>
@@ -58,7 +59,7 @@ export default function SimulatorSection() {
         </div>
 
         {/* Configurator */}
-        <div className="bg-surface-container-lowest rounded-3xl p-8 lg:p-12 shadow-md grid grid-cols-1 lg:grid-cols-12 gap-10">
+        <div data-animate="card" className="bg-surface-container-lowest rounded-3xl p-8 lg:p-12 shadow-md grid grid-cols-1 lg:grid-cols-12 gap-10">
           {/* Controls */}
           <div className="lg:col-span-7 flex flex-col gap-8">
             {/* Step 1: Companion */}

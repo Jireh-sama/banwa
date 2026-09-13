@@ -1,11 +1,10 @@
 export default function MeaningSection() {
   return (
-    <section className="w-full bg-surface-container-low py-20 lg:py-28" id="meaning">
+    <section className="w-full bg-surface-container-low py-20 lg:py-28" id="meaning" data-animate="section">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Narrative Column */}
-          <div className="lg:col-span-5">
-
+          <div className="lg:col-span-5" data-animate="header">
             <h2 className="font-heading text-[30px] lg:text-[40px] font-normal leading-[40px] lg:leading-[52px] tracking-[-0.01em] text-on-surface mb-6">
               In ancient roots,
               <br />
@@ -43,7 +42,7 @@ export default function MeaningSection() {
           {/* Feature Cards */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Card 1 */}
-            <div className="bg-surface-container-lowest p-8 rounded-3xl shadow-sm flex flex-col justify-between">
+            <div data-animate="card" className="bg-surface-container-lowest p-8 rounded-3xl shadow-sm flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center mb-6">
                   <span className="material-symbols-outlined text-primary text-[24px]">
@@ -67,7 +66,7 @@ export default function MeaningSection() {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-surface-container-lowest p-8 rounded-3xl shadow-sm flex flex-col justify-between">
+            <div data-animate="card" className="bg-surface-container-lowest p-8 rounded-3xl shadow-sm flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center mb-6">
                   <span className="material-symbols-outlined text-secondary text-[24px]">

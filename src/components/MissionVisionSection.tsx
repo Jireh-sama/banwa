@@ -1,9 +1,9 @@
 export default function MissionVisionSection() {
   return (
-    <section className="w-full bg-surface py-20 lg:py-28 border-y border-outline-variant/30" id="mission">
+    <section className="w-full bg-surface py-20 lg:py-28 border-y border-outline-variant/30" id="mission" data-animate="section">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section Header */}
-        <div className="max-w-3xl mb-14 lg:mb-16">
+        <div className="max-w-3xl mb-14 lg:mb-16" data-animate="header">
           <h2 className="font-heading text-[32px] lg:text-[44px] font-normal leading-[42px] lg:leading-[54px] tracking-[-0.01em] text-on-surface mb-4">
             Our Mission &amp; Vision
           </h2>
@@ -15,7 +15,7 @@ export default function MissionVisionSection() {
         {/* Mission & Vision Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Mission Column / Card */}
-          <div className="p-8 sm:p-10 lg:p-12 rounded-3xl bg-surface-container-low border border-outline-variant/50 flex flex-col justify-between relative overflow-hidden group hover:border-primary/40 transition-all duration-300">
+          <div data-animate="card" className="p-8 sm:p-10 lg:p-12 rounded-3xl bg-surface-container-low border border-outline-variant/50 flex flex-col justify-between relative overflow-hidden group hover:border-primary/40 transition-all duration-300">
             <div className="absolute top-0 right-0 w-48 h-48 bg-primary/5 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none" />
             
             <div>
@@ -56,7 +56,7 @@ export default function MissionVisionSection() {
           </div>
 
           {/* Vision Column / Card */}
-          <div className="p-8 sm:p-10 lg:p-12 rounded-3xl bg-surface-container-low border border-outline-variant/50 flex flex-col justify-between relative overflow-hidden group hover:border-secondary/40 transition-all duration-300">
+          <div data-animate="card" className="p-8 sm:p-10 lg:p-12 rounded-3xl bg-surface-container-low border border-outline-variant/50 flex flex-col justify-between relative overflow-hidden group hover:border-secondary/40 transition-all duration-300">
             <div className="absolute top-0 right-0 w-48 h-48 bg-secondary/5 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none" />
 
             <div>

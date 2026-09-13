@@ -27,10 +27,10 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="w-full bg-surface py-20 lg:py-28" id="stories">
+    <section className="w-full bg-surface py-20 lg:py-28" id="stories" data-animate="section">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-16" data-animate="header">
           <h2 className="font-heading text-[30px] lg:text-[40px] font-normal leading-[40px] lg:leading-[52px] tracking-[-0.01em] text-on-surface">
             Welcomed Back to the Living Room
           </h2>
@@ -45,6 +45,7 @@ export default function TestimonialsSection() {
           {testimonials.map((t) => (
             <div
               key={t.initials}
+              data-animate="card"
               className="p-8 rounded-3xl bg-surface-container-lowest shadow-sm flex flex-col justify-between"
             >
               <div>

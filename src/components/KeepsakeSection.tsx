@@ -35,10 +35,10 @@ const products = [
 
 export default function KeepsakeSection() {
   return (
-    <section className="w-full bg-surface-container-low py-20 lg:py-28" id="collection">
+    <section className="w-full bg-surface-container-low py-20 lg:py-28" id="collection" data-animate="section">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6" data-animate="header">
           <div className="max-w-2xl">
             <h2 className="font-heading text-[30px] lg:text-[40px] font-normal leading-[40px] lg:leading-[52px] tracking-[-0.01em] text-on-surface">
               The Banwa Sanctuary Keepsakes
@@ -61,6 +61,7 @@ export default function KeepsakeSection() {
           {products.map((product) => (
             <div
               key={product.title}
+              data-animate="card"
               className="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm flex flex-col justify-between group"
             >
               <div className="relative overflow-hidden h-72">

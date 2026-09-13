@@ -29,10 +29,10 @@ const addOns = [
 
 export default function CollaborationsSection() {
   return (
-    <section className="w-full bg-surface py-20 lg:py-28" id="collaborations">
+    <section className="w-full bg-surface py-20 lg:py-28" id="collaborations" data-animate="section">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6" data-animate="header">
           <div className="max-w-3xl">
             <h2 className="font-heading text-[30px] lg:text-[40px] font-normal leading-[40px] lg:leading-[52px] tracking-[-0.01em] text-on-surface">
               Local Artist Collaborations
@@ -52,7 +52,7 @@ export default function CollaborationsSection() {
         {/* Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           {/* Artisan Image */}
-          <div className="lg:col-span-5 relative">
+          <div data-animate="card" className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden bg-surface-container shadow-md group">
               <Image
                 src="/images/artist-image.png"
@@ -84,6 +84,7 @@ export default function CollaborationsSection() {
             {addOns.map((addon) => (
               <div
                 key={addon.title}
+                data-animate="card"
                 className="bg-surface-container-lowest p-7 rounded-3xl shadow-sm flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
               >
                 <div>

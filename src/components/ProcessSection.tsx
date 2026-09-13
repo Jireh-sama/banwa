@@ -35,10 +35,10 @@ const steps = [
 
 export default function ProcessSection() {
   return (
-    <section className="w-full bg-surface py-20 lg:py-28" id="process">
+    <section className="w-full bg-surface py-20 lg:py-28" id="process" data-animate="section">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section Header */}
-        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16" data-animate="header">
           <h2 className="font-heading text-[30px] lg:text-[40px] font-normal leading-[40px] lg:leading-[52px] tracking-[-0.01em] text-on-surface mb-4">
             From Treasured Photos to Solid Natural Marble
           </h2>
@@ -54,6 +54,7 @@ export default function ProcessSection() {
           {steps.map((step) => (
             <div
               key={step.num}
+              data-animate="card"
               className="bg-surface-container-lowest p-7 rounded-3xl shadow-sm flex flex-col justify-between transition-transform duration-300 hover:-translate-y-1"
             >
               <div>

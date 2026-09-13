@@ -39,10 +39,10 @@ const milestones = [
 
 export default function TimelineSection() {
   return (
-    <section className="w-full bg-surface py-20 lg:py-28" id="timeline">
+    <section className="w-full bg-surface py-20 lg:py-28" id="timeline" data-animate="section">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mb-16" data-animate="header">
           <h2 className="font-heading text-[30px] lg:text-[40px] font-normal leading-[40px] lg:leading-[52px] tracking-[-0.01em] text-on-surface">
             The 4–6 Week Journey Home
           </h2>
@@ -59,6 +59,7 @@ export default function TimelineSection() {
           {milestones.map((ms) => (
             <div
               key={ms.week}
+              data-animate="card"
               className="p-7 rounded-3xl bg-surface-container-lowest shadow-sm flex flex-col justify-between"
             >
               <div>
@@ -87,7 +88,7 @@ export default function TimelineSection() {
         </div>
 
         {/* Rush Support Banner */}
-        <div className="mt-8 p-6 rounded-2xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div data-animate="card" className="mt-8 p-6 rounded-2xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <span className="material-symbols-outlined text-secondary text-[24px]">
               event_repeat

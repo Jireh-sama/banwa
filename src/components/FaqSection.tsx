@@ -36,10 +36,10 @@ const faqs = [
 
 export default function FaqSection() {
   return (
-    <section className="w-full bg-surface-container-low py-20 lg:py-28" id="faq">
+    <section className="w-full bg-surface-container-low py-20 lg:py-28" id="faq" data-animate="section">
       <div className="max-w-4xl mx-auto px-6 lg:px-12">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-animate="header">
           <h2 className="font-heading text-[30px] lg:text-[40px] font-normal leading-[40px] lg:leading-[52px] tracking-[-0.01em] text-on-surface">
             Frequently Contemplated Questions
           </h2>
@@ -50,7 +50,7 @@ export default function FaqSection() {
         </div>
 
         {/* FAQ Accordion — base-ui uses defaultValue array, no type/collapsible */}
-        <Accordion defaultValue={[]} className="flex flex-col gap-4">
+        <Accordion defaultValue={[]} data-animate="card" className="flex flex-col gap-4">
           {faqs.map((faq, i) => (
             <AccordionItem
               key={i}
