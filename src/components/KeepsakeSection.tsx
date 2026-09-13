@@ -40,9 +40,6 @@ export default function KeepsakeSection() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-2xl">
-            <span className="font-body text-[12px] font-medium leading-[16px] tracking-[0.05em] text-secondary uppercase mb-2 block">
-              Heirloom Portfolio
-            </span>
             <h2 className="font-heading text-[30px] lg:text-[40px] font-normal leading-[40px] lg:leading-[52px] tracking-[-0.01em] text-on-surface">
               The Banwa Sanctuary Keepsakes
             </h2>

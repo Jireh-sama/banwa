@@ -4,11 +4,6 @@ export default function MissionVisionSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="max-w-3xl mb-14 lg:mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-container mb-4">
-            <span className="font-body text-[11px] font-semibold leading-[14px] tracking-[0.08em] text-secondary uppercase">
-              Guiding Ethos
-            </span>
-          </div>
           <h2 className="font-heading text-[32px] lg:text-[44px] font-normal leading-[42px] lg:leading-[54px] tracking-[-0.01em] text-on-surface mb-4">
             Our Mission &amp; Vision
           </h2>

@@ -40,9 +40,6 @@ export default function FaqSection() {
       <div className="max-w-4xl mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="font-body text-[12px] font-medium leading-[16px] tracking-[0.05em] text-secondary uppercase mb-2 block">
-            Guidance &amp; Reassurance
-          </span>
           <h2 className="font-heading text-[30px] lg:text-[40px] font-normal leading-[40px] lg:leading-[52px] tracking-[-0.01em] text-on-surface">
             Frequently Contemplated Questions
           </h2>

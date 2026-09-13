@@ -5,13 +5,6 @@ export default function CtaSection() {
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[40rem] h-[40rem] rounded-full bg-secondary-fixed/15 blur-3xl pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center relative z-10">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-body text-[12px] font-medium leading-[16px] tracking-[0.05em] mb-6">
-          <span className="material-symbols-outlined text-[16px]">
-            hourglass_bottom
-          </span>
-          <span>A Sanctuary That Withstands Generations</span>
-        </div>
 
         {/* Headline */}
         <h2 className="font-heading text-[38px] lg:text-[56px] font-normal leading-[48px] lg:leading-[68px] tracking-[-0.02em] text-on-surface mb-6">

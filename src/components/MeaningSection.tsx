@@ -5,11 +5,6 @@ export default function MeaningSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Narrative Column */}
           <div className="lg:col-span-5">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-container mb-4">
-              <span className="font-body text-[11px] font-semibold leading-[14px] tracking-[0.08em] text-secondary uppercase">
-                Provenance &amp; Soul
-              </span>
-            </div>
 
             <h2 className="font-heading text-[30px] lg:text-[40px] font-normal leading-[40px] lg:leading-[52px] tracking-[-0.01em] text-on-surface mb-6">
               In ancient roots,

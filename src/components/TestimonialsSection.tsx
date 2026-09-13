@@ -31,9 +31,6 @@ export default function TestimonialsSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="font-body text-[12px] font-medium leading-[16px] tracking-[0.05em] text-secondary uppercase mb-2 block">
-            Restorative Stories
-          </span>
           <h2 className="font-heading text-[30px] lg:text-[40px] font-normal leading-[40px] lg:leading-[52px] tracking-[-0.01em] text-on-surface">
             Welcomed Back to the Living Room
           </h2>
