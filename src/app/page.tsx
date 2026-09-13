@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import MeaningSection from "@/components/MeaningSection";
+import MissionVisionSection from "@/components/MissionVisionSection";
 import ProcessSection from "@/components/ProcessSection";
 import KeepsakeSection from "@/components/KeepsakeSection";
 import CollaborationsSection from "@/components/CollaborationsSection";
@@ -19,6 +20,7 @@ export default function Home() {
         <div className="flex flex-col w-full">
           <HeroSection />
           <MeaningSection />
+          <MissionVisionSection />
           <ProcessSection />
           <KeepsakeSection />
           <CollaborationsSection />
