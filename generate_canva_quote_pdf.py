@@ -166,8 +166,8 @@ def create_canva_quote_pdf(filename="Banwa_Canva_Project_Quote.pdf"):
         [
             Paragraph("<b>Canva Landing Page UI/UX & Visual Layout</b><br/>"
                       "<font color='#6B6562'>Design and assembly of the Banwa landing page within the Canva Website Builder. "
-                      "Includes brand styling, curated typography, terracotta earth-tone color scheme, hero presentation, "
-                      "brand story sections, keepsake showcase, and testimonials layout.</font>", style_body),
+                      "Includes brand styling, curated typography, hero presentation, brand story sections, "
+                      "mission and vision, and testimonials layout.</font>", style_body),
             Paragraph("Milestone 1", ParagraphStyle('C1', fontName='Helvetica', fontSize=8, textColor=MUTED, alignment=1)),
             Paragraph("PHP 3,500.00", ParagraphStyle('A1', fontName='Helvetica', fontSize=8.5, textColor=DARK, alignment=2))
         ],
