@@ -124,7 +124,7 @@ def create_canva_quote_pdf(filename="Banwa_Canva_Project_Quote.pdf"):
         Paragraph("<b>Jireh Tumbagahan</b>", style_body_bold),
         Spacer(1, 2),
         Paragraph("Email: jirehtumbagahan@gmail.com", style_body),
-        Paragraph("Platform: Canva Website Builder", style_body_muted),
+        Paragraph("Platform: Canva (Client Pro Workspace)", style_body_muted),
     ]
 
     parties_table = Table([[client_content, provider_content]], colWidths=[260, 260])
@@ -146,14 +146,14 @@ def create_canva_quote_pdf(filename="Banwa_Canva_Project_Quote.pdf"):
     story.append(Spacer(1, 4))
     story.append(Paragraph(
         "This project quote covers the visual design, layout setup, and publishing of an official landing page for "
-        "<b>Banwa</b> built using the <b>Canva Website Builder</b>. This no-code alternative delivers a cost-effective, "
-        "graphically cohesive digital presence for Banwa that is quick to launch and easy for the client team to edit "
-        "independently using Canva's intuitive visual editor.",
+        "<b>Banwa</b> built using the <b>Canva Website Builder</b>. Developed within the client's Canva Pro environment, "
+        "this no-code alternative delivers a cost-effective, visually cohesive digital presence for Banwa that is quick to launch "
+        "and easy for the client team to edit independently using Canva's intuitive visual editor.",
         style_body
     ))
     story.append(Spacer(1, 12))
 
-    # 4. Scope of Work Table (Specific to Canva No-Code)
+    # 4. Scope of Work Table (Specific to Canva No-Code - Updated Pricing)
     story.append(Paragraph("<b>2. Scope of Work & Deliverables</b>", style_sec_head))
     story.append(Spacer(1, 5))
 
@@ -165,11 +165,11 @@ def create_canva_quote_pdf(filename="Banwa_Canva_Project_Quote.pdf"):
         ],
         [
             Paragraph("<b>Canva Landing Page UI/UX & Visual Layout</b><br/>"
-                      "<font color='#6B6562'>Design and assembly of the Banwa landing page within Canva Website Builder. "
+                      "<font color='#6B6562'>Design and assembly of the Banwa landing page within the Canva Website Builder. "
                       "Includes brand styling, curated typography, terracotta earth-tone color scheme, hero presentation, "
                       "brand story sections, keepsake showcase, and testimonials layout.</font>", style_body),
             Paragraph("Milestone 1", ParagraphStyle('C1', fontName='Helvetica', fontSize=8, textColor=MUTED, alignment=1)),
-            Paragraph("PHP 2,500.00", ParagraphStyle('A1', fontName='Helvetica', fontSize=8.5, textColor=DARK, alignment=2))
+            Paragraph("PHP 3,500.00", ParagraphStyle('A1', fontName='Helvetica', fontSize=8.5, textColor=DARK, alignment=2))
         ],
         [
             Paragraph("<b>Mobile Responsiveness & Navigation Link Setup</b><br/>"
@@ -177,7 +177,7 @@ def create_canva_quote_pdf(filename="Banwa_Canva_Project_Quote.pdf"):
                       "Configuration of page section navigation anchors, call-to-action buttons, and inquiry contact links "
                       "(e.g. direct email or external messaging links).</font>", style_body),
             Paragraph("Milestone 1", ParagraphStyle('C2', fontName='Helvetica', fontSize=8, textColor=MUTED, alignment=1)),
-            Paragraph("PHP 1,500.00", ParagraphStyle('A2', fontName='Helvetica', fontSize=8.5, textColor=DARK, alignment=2))
+            Paragraph("PHP 1,000.00", ParagraphStyle('A2', fontName='Helvetica', fontSize=8.5, textColor=DARK, alignment=2))
         ],
         [
             Paragraph("<b>Canva Publishing & Editable Template Handover</b><br/>"
@@ -202,19 +202,19 @@ def create_canva_quote_pdf(filename="Banwa_Canva_Project_Quote.pdf"):
     story.append(deliverables_table)
     story.append(Spacer(1, 12))
 
-    # 5. Total Investment Box
+    # 5. Total Investment Box (Subtotal: PHP 5,500.00, Adjustment: Flat-Rate Startup Package Adjustment)
     total_data = [
         [
             Paragraph("<b>Subtotal (Canva Landing Page Design & Setup)</b>", style_body),
-            Paragraph("PHP 5,000.00", ParagraphStyle('T1', fontName='Helvetica', fontSize=8.5, textColor=DARK, alignment=2))
+            Paragraph("PHP 5,500.00", ParagraphStyle('T1', fontName='Helvetica', fontSize=8.5, textColor=DARK, alignment=2))
         ],
         [
-            Paragraph("<b>No-Code Startup Tier Adjustment</b>", style_body_muted),
+            Paragraph("<b>Flat-Rate Startup Package Adjustment</b>", style_body_muted),
             Paragraph("PHP 0.00", ParagraphStyle('T2', fontName='Helvetica', fontSize=8.5, textColor=MUTED, alignment=2))
         ],
         [
             Paragraph("<b>TOTAL PROJECT INVESTMENT</b>", ParagraphStyle('TotalLabel', fontName='Helvetica-Bold', fontSize=10, textColor=PRIMARY)),
-            Paragraph("<b>PHP 5,000.00</b>", ParagraphStyle('TotalVal', fontName='Helvetica-Bold', fontSize=11, textColor=PRIMARY, alignment=2))
+            Paragraph("<b>PHP 5,500.00</b>", ParagraphStyle('TotalVal', fontName='Helvetica-Bold', fontSize=11, textColor=PRIMARY, alignment=2))
         ],
     ]
     total_table = Table(total_data, colWidths=[376, 156])
@@ -250,13 +250,13 @@ def create_canva_quote_pdf(filename="Banwa_Canva_Project_Quote.pdf"):
             Paragraph("<b>Milestone 1:<br/>Project Deposit</b>", style_body_bold),
             Paragraph("50%", ParagraphStyle('M1', fontName='Helvetica-Bold', fontSize=8.5, textColor=DARK, alignment=1)),
             Paragraph("Due upon agreement to initiate Canva workspace layout, color theme, typography, and section design.", style_body),
-            Paragraph("<b>PHP 2,500.00</b>", ParagraphStyle('MA1', fontName='Helvetica-Bold', fontSize=9, textColor=PRIMARY, alignment=2))
+            Paragraph("<b>PHP 2,750.00</b>", ParagraphStyle('MA1', fontName='Helvetica-Bold', fontSize=9, textColor=PRIMARY, alignment=2))
         ],
         [
             Paragraph("<b>Milestone 2:<br/>Final Handover</b>", style_body_bold),
             Paragraph("50%", ParagraphStyle('M2', fontName='Helvetica-Bold', fontSize=8.5, textColor=DARK, alignment=1)),
             Paragraph("Due upon client review, live publishing on Canva, and transfer of editable Canva template access to client.", style_body),
-            Paragraph("<b>PHP 2,500.00</b>", ParagraphStyle('MA2', fontName='Helvetica-Bold', fontSize=9, textColor=PRIMARY, alignment=2))
+            Paragraph("<b>PHP 2,750.00</b>", ParagraphStyle('MA2', fontName='Helvetica-Bold', fontSize=9, textColor=PRIMARY, alignment=2))
         ],
     ]
     milestone_table = Table(milestone_data, colWidths=[110, 50, 260, 112])
@@ -273,15 +273,15 @@ def create_canva_quote_pdf(filename="Banwa_Canva_Project_Quote.pdf"):
     story.append(milestone_table)
     story.append(Spacer(1, 14))
 
-    # 4. Tech Stack Box (Canva-specific)
+    # 4. Tech Stack Box (Removed Layout Engine as requested)
     story.append(Paragraph("<b>4. Platform & Technical Specifications</b>", style_sec_head))
     story.append(Spacer(1, 5))
 
     tech_content = [
         [
             Paragraph("<b>Platform:</b> Canva Website Builder (No-Code Visual Editor)<br/>"
-                      "<b>Layout Engine:</b> Canva Graphic Canvas + Mobile View Adaptations<br/>"
-                      "<b>Design Format:</b> Fully Editable Canva Project File", style_body),
+                      "<b>Account Environment:</b> Client-Provided Canva Pro Workspace<br/>"
+                      "<b>Design Format:</b> Fully Editable Canva Project Template", style_body),
             Paragraph("<b>Hosting:</b> Canva Free Website Hosting<br/>"
                       "<b>Custom Domain:</b> Supported via Canva Domain Settings<br/>"
                       "<b>Handover:</b> Shared Editable Template Link & Design Ownership", style_body)
@@ -308,11 +308,11 @@ def create_canva_quote_pdf(filename="Banwa_Canva_Project_Quote.pdf"):
     terms_box = [
         Paragraph("• <b>Template Ownership & DIY Editing:</b> Full ownership and edit access to the Canva website template will be transferred to the client upon receipt of the final milestone payment, enabling self-service content edits without coding.", style_body),
         Spacer(1, 3),
-        Paragraph("• <b>No-Code Platform Scope & Limitations:</b> Because this website is built on Canva, advanced custom software features—such as custom interactive JavaScript price calculators, automated database storage, and deep code-level technical SEO (custom Open Graph tags, JSON-LD schemas, and server-side rendering)—are not supported and are excluded.", style_body),
+        Paragraph("• <b>No-Code Platform Scope & Limitations:</b> Because this website is built on the Canva Website Builder, custom software development and deep code-level technical SEO (such as custom Open Graph meta tags, structured JSON-LD schemas, and server-side rendering) are not supported on no-code platforms and are excluded.", style_body),
         Spacer(1, 3),
         Paragraph("• <b>Domain Name Registration (Excluded):</b> Domain registration and annual renewal fees (e.g. <i>banwa.ph</i> or <i>banwa.com</i>) are <b>not included</b>. The client purchases the domain directly, and guidance on connecting it within Canva's site settings will be provided.", style_body),
         Spacer(1, 3),
-        Paragraph("• <b>Canva Hosting & Account:</b> Free web hosting provided by Canva is included. Any optional Canva Pro account subscriptions (if chosen by the client for their personal account) are billed directly by Canva.", style_body),
+        Paragraph("• <b>Canva Account & Hosting:</b> Development will take place within the client's provided Canva Pro account. Standard website hosting provided by Canva is included; the existing Canva Pro subscription is maintained directly by the client.", style_body),
         Spacer(1, 3),
         Paragraph("• <b>Post-Launch Support:</b> Includes 7 calendar days of complimentary design tweaks and assistance in Canva following website publishing.", style_body),
     ]
