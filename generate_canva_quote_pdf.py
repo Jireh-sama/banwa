@@ -338,7 +338,7 @@ def create_canva_quote_pdf(filename="Banwa_Canva_Project_Quote.pdf"):
                 Paragraph("<b>PREPARED BY:</b>", style_body_bold),
                 Spacer(1, 20),
                 Paragraph("<b>Jireh Tumbagahan</b>", style_body_bold),
-                Paragraph("Designer & Web Developer<br/>Date: September 14, 2026", style_body_muted)
+                Paragraph("Developer & Designer<br/>Date: September 14, 2026", style_body_muted)
             ],
             [
                 Paragraph("<b>ACCEPTED AND AGREED:</b>", style_body_bold),
